@@ -1,0 +1,153 @@
+
+<html>
+    <head>
+
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <!--Carga de los static files-->
+        {% load static %}
+        <!--Carga el css-->
+        <link href="{% static 'css/base.css' %}" rel="stylesheet">    
+        <link href="{% static 'css/sharedprops.css' %}" rel="stylesheet">
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+      </head>
+
+    <body>
+        <!--Si quiero que el bg del container abarque toda la página solo le tengo que agregar -fluid -->
+        
+        <div class="container-fluid" id="headin">
+            <div class="row">
+              
+              <div class="col my-top" id="nopaddingcol">
+                <a href="{% url 'Home' %}"><img class="im-logo" src="{% static 'imagenes/LOGOC.png' %}"></a>
+              
+                <div  class="col my-auto" id="nopaddingcol" style=" justify-content: center;">
+                <p id="xxx" style="display: table-cell; vertical-align: middle;  justify-content: center;">TecnoDiesel Solutions</p>
+              </div>
+              </div>
+              
+              </div>
+              
+              <!--AQUII-->
+                <!--<div  class="col my-auto" style=" justify-content: center;">
+                
+                <img class="im-logo2" id="xxx" style="margin-top: 0px; display: table-cell; vertical-align: middle;  justify-content: center;" src="{% static 'WebTecnoDieselApp/imagenes/TDHorizontal.jpeg' %}">
+                  
+                  
+              <p class="bigheader2">TecnoDiesel Solutions</p>
+
+                <img class="im-logo2" id="xxx" style="margin-top: 0px; display: table-cell; vertical-align: middle;  justify-content: center;" src="{% static 'imagenes/logo.png' %}">
+              </div>-->
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top"  id="mainNav">
+            <div class="container-fluid text-center" >
+                <!--Aquí solo debe ir el Home-->
+                <a class="navbar-brand  text-center d-lg-none ddtitle" href="{% url 'Home' %}">Inicio</a>
+                
+                <!--Meto el botón de tres líneas pero con drop down menu con despliegue a la izq.-->
+                <div class="btn-group dropleft">
+                    <button class="navbar-toggler btn-secondary dropdown-toggle-split dropdown-drop-left " data-toggle="dropdown" 
+                    id="dropdownMenuButton" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon text-expanded px-lg-4" id="Hamburgerbtn"></span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item {% if request.path == '/' %}active{% endif %} dditem" href="{% url 'Home' %}">Inicio</a>
+                      <a class="dropdown-item {% if request.path == '/servicios' %}active{% endif %} dditem" href="{% url 'Servicios' %}">Servicios</a>
+                      <!-- <a class="dropdown-item {% if request.path == '/nosotros' %}active{% endif %} dditem" href="{% url 'Nosotros' %}">Nosotros</a> -->
+                      <a class="dropdown-item {% if request.path == '/contacto' %}active{% endif %} dditem" href="{% url 'Contacto' %}">Contacto</a>
+                      
+                    </div>
+                  </div>
+
+                <!--A continuación meto el botón de tres líneas que aparece cuando reduzco el tamaño-->
+               <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                -->
+                <div class="collapse navbar-collapse sticky-top" id="navbarResponsive" style="margin-top: 0%;">
+                    <ul class="navbar-nav mx-auto" style="margin-top: 0%;">
+                        <!--Meto los items de mi navbar-->
+                        <a class="nav-item text-expanded px-lg-4 {% if request.path == '/' %}active{% endif %} dditem" href="{% url 'Home' %}">Inicio</a>
+                        <a class="nav-item text-expanded px-lg-4 {% if request.path == '/servicios' %}active{% endif %}" href="{% url 'Servicios' %}">Servicios</a>
+                        <!-- <a class="nav-item text-expanded px-lg-4 {% if request.path == '/nosotros' %}active{% endif %}" href="{% url 'Nosotros' %}">Nosotros</a>-->
+                        <a class="nav-item text-expanded px-lg-4 {% if request.path == '/contacto' %}active{% endif %}" href="{% url 'Contacto' %}">Contacto</a>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        {% block content %}
+
+        {% endblock %}
+
+         <!-- Footer -->
+    <footer class="footer text-faded text-center py-5">
+        <div class="container" style="position: relative; top: 50%; transform: translateY(-50%); font-size: 20px;">
+          <p class="m-0">
+              <a href="#" class="link">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="#" class="link">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="#" class="link">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+          </p>
+          <!-- No olvidar subir el aviso de privacidad, como quiera no usamos cookies. -->
+          <!-- <p class="m-0 mbt">
+              <a href="sample.html" class="link">Política de privacidad</a> ·
+              <a href="sample.html" class="link">Aviso legal</a> ·
+              <a href="sample.html" class="link">Cookies</a>
+          </p> -->
+          <p class="m-0 mbt1">&copy; TecnoDiesel Solutions 2022</p>
+        </div>
+      </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+      
+        <!--Script para activación de los tooltips cuando hay mouse hover-->
+        <script>
+          $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+          });
+          </script>
+
+          
+         
+
+          
+
+
+</body>
+  
+
+
+</html>

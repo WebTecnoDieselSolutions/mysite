@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<link href="{% static 'css/contacto.css' %}" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="{% static 'css/sharedprops.css' %}" rel="stylesheet">
+
+<div class="welcomelabel">
+    <p class="bigheader">Contáctanos</p>
+    <p class="headerbody">Envíanos un mensaje, nos comunicaremos a la brevedad.</p>
+</div>
+
+<br>
+<div class="container-juan" >
+    <p class="form-title">Completa con tus datos:</p>
+    <hr class="new1">
+    <form action="/contacto" method="POST">{% csrf_token %}
+        
+        <div class="input-group input-group-lg">
+            <span class="input-group-text" style="font-size: 30px; width: 160px;">*Nombre:</span>
+            <input type="text" required="required" placeholder="Alfredo Hernández" class="form-control" style="height: 60px;">
+          </div>
+        <br>
+        <div class="input-group input-group-lg">
+            <span class="input-group-text" style="font-size: 30px; width: 160px;">*Email:</span>
+            <input type="email" required="required" name="email" placeholder="TuEmail@xmail.com" class="form-control" style="height: 60px;">
+          </div>
+        <br>
+        <div class="input-group input-group-lg">
+            <span class="input-group-text" style="font-size: 30px; width: 160px;">*Asunto:</span>
+            <input type="text" required="required" name="asunto" placeholder="Cotización de espreas" class="form-control" style="height: 60px;">
+            </div>
+        <br>
+        <div class="input-group input-group-lg">
+        <span class="input-group-text" style="font-size: 30px; width: 160px;">Compañía:</span>
+        <input type="text" name="company" placeholder="TecnoDiesel Solutions" class="form-control" style="height: 60px;">
+        </div>
+        <br>
+        <div class="input-group input-group-lg">
+        <span class="input-group-text" style="font-size: 30px; width: 160px;">*Mensaje:</span>
+        <textarea class="form-control" required="required" name="mensaje" style="height: 180px;"></textarea>
+        </div>
+        <br>
+        <button type="" class="btn boton " href="{% url 'Contacto' %}" >
+            Enviar 
+            <span class="bi bi-envelope-plus"></span>
+        </button>
+            
+
+    </form>
+</div>
+
+<br>
+<br>
+
+   <!--
+       
+   -->
+      
+
+{% endblock %}

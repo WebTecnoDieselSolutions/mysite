@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="{% static 'css/sharedprops.css' %}" rel="stylesheet">
+<link href="{% static 'css/nosotros.css' %}" rel="stylesheet">
+
+<div class="welcomelabel">
+  <p class="bigheader">Servicios</p>
+</div>
+
+
+
+<!--
+<br>
+<div class="welcomelabel">
+   <p class="bigheader">Servicios</p>
+   <p class="headerbody">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+</div>
+<br>
+-->
+
+<div class="container-fluid" style="padding-left:0px">
+
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-md-4 bl">
+          <img class="img-fluid sidecards"  src="{% static 'imagenes/milling.png' %}" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body" >
+            <h5 class="card-title text-center clmn-title">Fresado</h5>
+            <hr class="new1">
+            <div class="container-fluid  text-justify clmn-text" id="contenedor2">
+              <p class="card-text">Uno de los procesos de mecanizado más utilizados en la industria, con el que contamos con harta experiencia para brindar productos que satisfagan tus necesidades.
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<br>
+
+<div class="container-fluid" style="padding-right:0px">
+
+    <div class="card card2">
+      <div class="row no-gutters">
+        
+        <div class="col-md-8">
+          <div class="card-body ">
+            <h5 class="card-title text-center clmn-title">Torneado</h5>
+            <hr class="new1">
+            <div class="container-fluid  text-justify clmn-text" id="contenedor2">
+              <p class="card-text">Utilizado para manufacturar piezas y refacciones de la más alta calidad, nuestros operadores cuentan con amplio conocimiento para brindar soluciones a nuestros clientes.
+              </p>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <img class="img-fluid sidecards"  src="{% static 'imagenes/lathe.png' %}" alt="...">
+        </div>
+      </div>
+    </div>
+</div>
+
+<br>
+
+<div class="container-fluid" style="padding-left:0px">
+
+  <div class="card">
+    <div class="row no-gutters">
+      <div class="col-md-4 bl">
+        <img class="img-fluid sidecards"  src="{% static 'imagenes/toolings.png' %}" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body" >
+          <h5 class="card-title text-center clmn-title">CNC</h5>
+          <hr class="new1">
+          <div class="container-fluid  text-justify clmn-text" id="contenedor2">
+            <p class="card-text">Es nuestra experiencia lo que nos permite aprovechar la versatilidad que representa el maquinado automatizado para la reparación y fabricación de nuestros productos.
+            </p>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br>
+
+<div class="container-fluid" style="align-items: center; background-color: transparent;" >
+    <div class="card mb-3" >
+      <br>
+        <h2 class="card-title clmn-title" style="text-align: center;">Reparación</h2>
+        <hr class="new1">
+        <img style="max-height: 40vw; max-width: 100%;" src="{% static 'imagenes/mechanicfrog.png' %}" >
+        <div class="card-body hardbluecont">
+          <p class="card-text card-text">Nos consideramos veteranos en el mercado de refacciones diesel, razón por la que ofrecemos soluciones óptimas que se adaptan a las necesidades de nuestros clientes.
+          </p>
+        </div>
+    </div>
+</div>
+
+<br>
+
+
+
+{% endblock %}

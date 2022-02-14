@@ -1,0 +1,52 @@
+
+
+#nextprevbutton{
+background-color: rgba(74, 76, 80, 0.842);
+height: 45%;
+width: 30%;
+margin-block: auto;
+border-radius: 10px;
+}
+
+/*No se si estos dos se usan pero podría ser en caso de que las imagenes sean de distintos tamaños*/
+.img-fluid{
+width: 100%;
+max-height:420px;
+}
+.carous{
+max-height: 580px;
+}
+
+
+/*Párrafo, título y texto de columnas es probable que esto convenga retenerlo en base*/
+.midclmn-text{
+font-size: 30px; 
+padding: 10px;
+}
+.clmn-title{
+font-size:30px;
+}
+.clmn-text{
+margin-right:15px;
+margin-left:15px;
+font-size: x-large; 
+text-justify:inter-word;
+}
+
+/*Statement de que es un grupo^*/
+
+/*Our Apps*/
+.header{
+    font-size: 4rem;
+    color: white;
+    font-weight: bold;
+}
+
+/*Location*/
+.hardbluecont{
+background-color: rgb(73, 99, 156);
+color: white;
+text-align: center;
+}
+
+

@@ -1,0 +1,15 @@
+.container-juan{
+    background-color: rgb(134, 152, 184);
+    margin: auto;
+    width: 90%;
+    border: 6px solid rgb(73, 99, 156);
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.form-title{
+    font-size:calc(18px + 4vw);
+    color: white;
+}

@@ -1,0 +1,314 @@
+/* Documento css por separado para las cosas que van a estar en comun entre paginas como CARD y evitar los overrides de bootstrap*/
+
+/*colors*/
+:root {
+    --ColorPrimario: rgb(73, 99, 156);
+    --ColorSecundario: rgb(102 123 161);
+    --ColorTitulo: rgb(10, 10, 51);
+    --ColorLight: rgb(223,233,238);
+    --ColorMidcard: rgb(60, 82, 128);
+  }
+/*colors*/
+
+.card{
+background-color: var(--ColorPrimario);
+/*    background-color: rgb(144, 164, 198);*/
+color: white;
+}
+
+/*Services*/
+.ioico{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    height: 120px;
+    width: 120px;
+    }
+
+.card2{
+background-color: var(--ColorSecundario);
+/*    background-color: rgb(144, 164, 198);*/
+color: white;
+}
+
+.card-title{
+    font-size: 3vw;
+}
+
+.card-text{
+    font-size: 1.8vw;
+}
+
+.services{
+background-color: var(--ColorSecundario);
+}
+
+/*Welcome to GF headers*/
+
+.headerbody{
+    font-weight: bold;
+    color: var(--ColorPrimario);
+    text-align: center;
+    font-size:calc(24px + 1.3vw);
+    }
+
+.bigheader{
+font-family: Lobster;
+font-size:calc(18px + 7.5vw);
+color: var(--ColorPrimario);
+text-align: center;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+.welcomelabel{
+background-color: var(--ColorLight);
+margin-bottom: 25px;
+}
+/*Welcome to GF headers*/
+
+
+.light-bg{
+color: black;
+font-size: 20px;
+font-weight: bold;
+text-shadow: 2px 2px 8px white;
+}
+
+.light-title{
+color: black;
+text-shadow: 2px 2px 8px white;
+font-size: 25;
+font-weight: bolder;
+}
+
+.dark-bg{
+color: white;
+font-size: 25px;
+
+}
+
+.dark-title{
+color: white;
+text-shadow: 2px 2px 8px black;
+font-size: 30px;
+font-weight: bolder;
+}
+
+#headin{
+/*Color transparente*/
+/*background-color: rgba(38, 91, 206, 0.65);*/
+/*Color sólido*/
+/*background-color: rgb(68, 102, 177);*/
+background-color: rgb(184,211,242);
+text-align:center;
+/*font-family:Georgia, 'Times New Roman', Times, serif;*/
+/*font-family: Lobster;*/
+font-family: 'Aldrich', sans-serif;
+font-weight:bold;
+font-size: 7vw;
+color:rgb(42,77,156);
+/*color: var(--ColorTitulo);*/
+/*max-height: 250px;*/
+
+}
+
+.hardbluecont{
+    background-color: var(--ColorMidcard);
+    color: white;
+    text-align: center;
+    }
+
+.col-sm{
+    /*first value applies to top-left corner, second value applies to top-right corner, third value applies to bottom-right corner, and fourth value applies to bottom-left corner*/
+    border-radius: 30px 30px 30px 30px;
+    
+}
+
+.bgcolorP{
+    background-color: var(--ColorPrimario);
+}
+.bgcolorS{
+    background-color: var(--ColorSecundario);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.className {
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    right: 0;
+    top: 0;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+
+.container2{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+/* Centered text */
+.blackfilter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: brightness(50%);
+    width: 100%;
+    height: 100%;
+  }
+.bfilter{
+    backdrop-filter: brightness(50%);
+    display: inline-block;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius: 5px;
+}
+
+.bigheader2{
+    font-family: Lobster;
+    font-size:calc(24px + 8vw);
+    color: var(--ColorTitulo);
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    }
+
+.navtext{
+    font-size: 58px;
+}
+
+.cardtitle{
+    font-family: Lobster;
+    font-size: calc(30px + 3vw);
+}
+
+.cardtext{
+    font-size: x-large;
+}
+
+.sidecards{
+    position: relative;
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+.boton{
+    background-color:rgb(16, 60, 141);
+    color: white;
+    text-shadow: black;
+    font-family: Lobster;
+    font-size: calc(30px + 1vw);
+    border-radius: 20px;
+}
+
+/*Para que sirva cambia el '#' por '.' */
+.boton:hover{
+    
+  color: black;
+}
+
+.boton:hover .bi{
+  color: black;
+}
+
+.sharedbg {
+    
+    background-image: url(../imagenes/cnc.png);
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-position-y: 00%; 
+    background-position-x: 30%;
+    background-size: calc(1920px + 70vh);
+    width: 30%;
+    /*padding: 0%;*/
+    
+  }
+  
+
+#magma{
+      padding: 0%;
+  }
+
+
+.cardbdfilter{
+    border-radius: 30px 30px 30px 30px;
+    /*backdrop-filter: brightness(50%);*/
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    height: 100%;
+}
+
+.bfilter2{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius: 5px;
+}
+
+.baga{
+    background-image:url(../imagenes/cuter.png);
+}
+
+
+
+/* Create two equal columns that floats next to each other */
+.coluj {
+    float: left;
+    width: 31%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Create two equal columns that floats next to each other */
+  .column1 {
+    float: left;
+    width: 23%;
+    padding: 10px;
+  }
+  .column2 {
+    float: left;
+    width: 77%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .rou:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  hr.new1 {
+    border-top: 5px solid rgb(2255, 204, 1);
+    border-radius: 3px;
+  }

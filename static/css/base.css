@@ -1,0 +1,145 @@
+/*colors*/
+:root {
+  --ColorPrimario: rgb(73, 99, 156);
+  --ColorSecundario: rgb(144, 164, 198);
+}
+/*colors*/
+
+body {
+  font-family: 'Lora';
+  /*background: linear-gradient(rgba(17, 17, 17, 0.65), rgba(253, 252, 251, 0.65));*/
+  /*background: whitesmoke;*/
+  
+  /* Meto mi patron como fondo */
+  /*background-image:  url("../imagenes/chiquito.png");*/
+  /*background-size: 1920px 1080px;*/
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+
+
+  font-size:1cm;
+  font-weight: bolder;
+  color:black;
+  text-align: center;
+  font-family:'Libre+Baskerville';
+
+  height: 100%;
+  width: 100%;
+ padding: 0%;
+  display: table;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+#mainNav{
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";;
+font-weight: lighter;
+background-color:rgba(0, 0, 0, 0.85);
+/*border-style:dashed;
+border-bottom-color: saddlebrown 1px;*/
+}
+
+#Hamburgerbtn{
+ 
+    width: 3.5em;
+    height: 3.5em;
+    
+}
+
+
+#mainNav .navbar-brand{
+color:white;
+text-align: left;
+font-weight: bold;
+font-size: 44px;
+}
+
+#mainNav .nav-item{
+color:white;
+font-weight: bold;
+font-size: 34px;
+
+
+}
+
+
+
+
+
+/*Cambiar el nombre de la propiedad*/
+#xxx{
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+#nopaddingcol{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+/*Top left logo image*/
+#headin .marginRow{
+margin-bottom:0px; 
+}
+.im-logo{
+top: 1px;
+width: 15vw;
+/*width: 135px;
+height: 131px;*/
+}
+
+.im-logo2{
+  margin-top: 0px;
+  /*OG height: 131px*/
+  height: 12vw;
+  }
+
+/*Por algun motivo esto solo afecta la parte del titulo de la pagina (arriba del navbar sospecho*/
+.col {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/*No se porque o si realmente se usa*/
+.row {
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+width: auto; 
+}
+
+.dditem{
+  font-size: 44px;
+}
+
+
+
+
+
+.nav-tabs .nav-item .nav-link {
+background-color:rgb(217, 217, 219);
+color:black;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: bolder;
+}
+
+.footer{
+/*background-image: url("../imagenes/chiquito.png");*/
+background-color: rgba(161, 182, 219, 0.3);
+display: table-row;
+height:150px;
+text-align: center;
+}
+
+/*Para subrayar el item del navbar que indica en que página estoy*/
+/*nota que primero viene navbar-nav y esto es para que el subrayado no aparezca en los que estan dentro del menu de hamburguesa
+Esto porque solo se aplica a quellos que tengan active dentro de navbar-nav y no dentro de navbar-toggler-icon que son los del menu de hamburguesa*/
+.navbar-nav .active {
+  text-decoration-line: underline !important;
+}
